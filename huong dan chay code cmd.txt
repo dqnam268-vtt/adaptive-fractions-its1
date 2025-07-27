@@ -1,0 +1,4 @@
+git clone https://github.com/dqnam268-vtt/adaptive-fractions-its.git
+cd adaptive-fractions-its
+py -m venv venv
+.\venv\Scripts\activate

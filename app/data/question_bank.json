@@ -1,0 +1,73 @@
+[
+  {
+    "question_id": "QN001",
+    "content": {
+      "text": "Tính giá trị của biểu thức: 1/7 + 3/7",
+      "image": null,
+      "formula_latex": "\\frac{1}{7} + \\frac{3}{7}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["3/14", "4/14", "4/7", "2/7"],
+    "correct_answer": "4/7",
+    "knowledge_component": "cong_cung_mau_so",
+    "difficulty_level": 1,
+    "misconception_target": ["ERROR_ADD_DENOMINATOR"],
+    "hints": [
+      {"hint_id": "H001_1", "text": "Khi cộng hai phân số cùng mẫu, ta làm gì với tử số và mẫu số?"},
+      {"hint_id": "H001_2", "text": "Lưu ý, chúng ta chỉ cộng các tử số và giữ nguyên mẫu số chung."}
+    ]
+  },
+  {
+    "question_id": "QN002",
+    "content": {
+      "text": "Rút gọn phân số sau về dạng tối giản: 12/18",
+      "image": null,
+      "formula_latex": "\\frac{12}{18}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["6/9", "4/6", "2/3", "3/4"],
+    "correct_answer": "2/3",
+    "knowledge_component": "rut_gon_phan_so",
+    "difficulty_level": 2,
+    "misconception_target": ["ERROR_SIMPLIFY_PROCEDURE"],
+    "hints": [
+      {"hint_id": "H002_1", "text": "Để rút gọn phân số, hãy tìm ước chung lớn nhất (ƯCLN) của cả tử và mẫu."},
+      {"hint_id": "H002_2", "text": "Chia cả tử số và mẫu số cho ƯCLN của chúng."}
+    ]
+  },
+  {
+    "question_id": "QN003",
+    "content": {
+      "text": "Thực hiện phép tính: 2/3 + 1/4",
+      "image": null,
+      "formula_latex": "\\frac{2}{3} + \\frac{1}{4}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["3/7", "11/12", "8/12", "3/12"],
+    "correct_answer": "11/12",
+    "knowledge_component": "cong_khac_mau_so",
+    "difficulty_level": 3,
+    "misconception_target": [],
+    "hints": [
+      {"hint_id": "H003_1", "text": "Hai phân số này có cùng mẫu số không? Bạn cần làm gì trước khi cộng chúng?"},
+      {"hint_id": "H003_2", "text": "Bạn cần quy đồng mẫu số. Hãy tìm mẫu số chung nhỏ nhất của 3 và 4."}
+    ]
+  },
+  {
+    "question_id": "QN004",
+    "content": {
+      "text": "So sánh hai phân số: -5/8 và -7/8",
+      "image": null,
+      "formula_latex": "-\\frac{5}{8} \\text{ và } -\\frac{7}{8}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["-5/8 > -7/8", "-5/8 < -7/8", "-5/8 = -7/8"],
+    "correct_answer": "-5/8 > -7/8",
+    "knowledge_component": "so_sanh_cung_mau",
+    "difficulty_level": 2,
+    "misconception_target": [],
+    "hints": [
+      {"hint_id": "H004_1", "text": "Với hai phân số âm có cùng mẫu số dương, phân số nào có tử số lớn hơn thì lớn hơn."}
+    ]
+  }
+]
