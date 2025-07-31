@@ -1,4 +1,4 @@
-# adaptive-fractions-its1/app/main.py
+# app/main.py
 
 import json
 from fastapi import FastAPI
@@ -10,10 +10,6 @@ from .api.router import router
 from .core.adaptation import AdaptationEngine
 from .core.student_bkt_manager import StudentBKTManager
 
-# BỎ CÁC IMPORT LIÊN QUAN ĐẾN CƠ SỞ DỮ LIỆU SQL NÀY
-# from .database import engine, Base
-# from .models import Student, Interaction
-
 app = FastAPI(
     title="Hệ Thống Luyện Tập Phân Số Thích Ứng",
     description="Ứng dụng giúp học sinh luyện tập phân số với khả năng thích ứng dựa trên trình độ.",
@@ -22,11 +18,12 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
+    # CẬP NHẬT: Cho phép các nguồn gốc cụ thể để giải quyết lỗi CORS
     allow_origins=[
-        "http://localhost:8000",
-        "null",
-        "https://your_username.github.io",   # THAY THẾ BẰNG URL GITHUB PAGES CỦA BẠN (VD: https://dqnam268-vtt.github.io)
-        "https://your_username.github.io/your_repository_name", # Hoặc đường dẫn cụ thể nếu repo name nằm trong URL
+        "http://localhost:8000",                               # Cho phép khi chạy cục bộ (nếu bạn có)
+        "null",                                                # Cho phép khi mở index.html trực tiếp từ ổ đĩa (origin is 'null') - KHÔNG NÊN DÙNG TRONG PRODUCTION
+        "https://dqnam268-vtt.github.io",                      # URL gốc của GitHub Pages của bạn
+        "https://dqnam268-vtt.github.io/adaptive-fractions-its1", # URL cụ thể của repository này trên GitHub Pages
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -37,11 +34,6 @@ app.add_middleware(
 async def startup_event():
     print("Ứng dụng đang khởi động...")
 
-    # BỎ CÁC DÒNG TẠO BẢNG CƠ SỞ DỮ LIỆU SQL NÀY
-    # Base.metadata.create_all(bind=engine)
-    # print("Đã tạo hoặc kiểm tra các bảng cơ sở dữ liệu.")
-
-    # Đường dẫn đến question_bank.json
     question_bank_path = 'app/data/question_bank.json'
 
     try:
@@ -63,9 +55,6 @@ async def startup_event():
     app.state.adaptation_engine = AdaptationEngine(all_kcs=all_kcs)
     print("Đã khởi tạo Adaptation Engine.")
 
-    # student_managers sẽ vẫn là một dictionary trong bộ nhớ tạm thời
-    # để quản lý các phiên làm việc của học sinh đang hoạt động.
-    # Dữ liệu thực tế sẽ được đọc/ghi vào DB thông qua StudentBKTManager.
     app.state.student_managers = {}
     print("Đã khởi tạo bộ quản lý học sinh (cache).")
     print("Ứng dụng khởi động hoàn tất.")
