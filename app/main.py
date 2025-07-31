@@ -18,12 +18,11 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    # CẬP NHẬT: Cho phép các nguồn gốc cụ thể để giải quyết lỗi CORS
     allow_origins=[
-        "http://localhost:8000",                               # Cho phép khi chạy cục bộ (nếu bạn có)
-        "null",                                                # Cho phép khi mở index.html trực tiếp từ ổ đĩa (origin is 'null') - KHÔNG NÊN DÙNG TRONG PRODUCTION
-        "https://dqnam268-vtt.github.io",                      # URL gốc của GitHub Pages của bạn
-        "https://dqnam268-vtt.github.io/adaptive-fractions-its1", # URL cụ thể của repository này trên GitHub Pages
+        "http://localhost:8000",                                    # Cho phát triển cục bộ
+        "null",                                                     # Cho việc mở index.html trực tiếp từ ổ đĩa (chỉ cho test, không dùng prod)
+        "https://dqnam268-vtt.github.io",                           # URL gốc của GitHub Pages
+        "https://dqnam268-vtt.github.io/adaptive-fractions-its1",   # URL cụ thể của repo trên GitHub Pages
     ],
     allow_credentials=True,
     allow_methods=["*"],
