@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện Tập Phân Số Thích Ứng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        .selected-correct { background-color: #22c55e !important; color: white !important; } /* Tailwind green-500 */
+        .selected-incorrect { background-color: #ef4444 !important; color: white !important; } /* Tailwind red-500 */
+        .reveal-correct { background-color: #dcfce7 !important; border-color: #22c55e !important; } /* Tailwind green-100 with green border */
+        /* Thêm hiệu ứng hover cho các nút option */
+        .option-btn:hover {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transform: translateY(-2px);
+        }
+        .option-btn {
+            transition: all 0.2s ease-in-out;
+        }
+        /* Đảm bảo canvas có thể co giãn */
+        canvas {
+            width: 100% !important;
+            height: auto !important; /* Đảm bảo chiều cao tự động */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4">
+
+    <div id="login-container" class="w-full max-w-md bg-white rounded-2xl shadow-lg p-8 m-4 text-center">
+        <h1 class="text-3xl font-bold text-gray-800">Chào mừng bạn!</h1>
+        <p class="text-gray-500 mt-2 mb-6">Vui lòng nhập tên của bạn để bắt đầu.</p>
+        <input type="text" id="student-id-input" class="w-full border-2 border-gray-300 rounded-lg p-3 text-lg text-center focus:border-indigo-500 focus:ring-indigo-500" placeholder="Ví dụ: an_nguyen">
+        <button id="start-btn" class="mt-4 w-full bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75 transition-colors duration-200">Bắt đầu</button>
+    </div>
+
+    <div id="app-container" class="hidden w-full max-w-2xl bg-white rounded-2xl shadow-lg p-8 m-4">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800">Hệ Thống Luyện Tập Phân Số</h1>
+            <p class="text-gray-500 mt-2">Xin chào, <strong id="student-id-display"></strong>! Hãy chọn câu trả lời đúng.</p>
+        </header>
+
+        <div id="quiz-container" class="space-y-6">
+            <div id="question-card" class="bg-gray-50 p-6 rounded-lg border border-gray-200 min-h-[100px] flex items-center justify-center">
+                <p id="question-text" class="text-2xl font-medium text-center text-gray-900">Đang tải...</p>
+            </div>
+            <div id="options-container" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+            <div id="feedback-container" class="h-24 flex flex-col items-center justify-center space-y-4">
+                <p id="feedback-text" class="text-xl font-bold text-center"></p>
+                <button id="next-question-btn" class="hidden bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75 transition-colors duration-200">Câu tiếp theo</button>
+            </div>
+        </div>
+
+        <div class="mt-8 text-center">
+            <button id="toggle-progress-btn" class="bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-75 transition-colors duration-200">
+                Xem Tiến độ Học tập
+            </button>
+        </div>
+
+        <div id="progress-dashboard-section" class="hidden mt-8 p-6 bg-white rounded-2xl shadow-lg border border-gray-100">
+            <h2 class="text-2xl font-bold mb-1 text-center text-indigo-700">Tiến độ Học tập</h2>
+            <p id="student-progress-name" class="text-xl text-gray-700 mb-4 text-center">Xin chào, <strong class="text-indigo-600"></strong>!</p> <div class="text-center mb-4">
+                <p class="text-xl font-bold text-gray-800">Tổng số sao: <span id="total-stars-display" class="text-yellow-500">0</span></p>
+                <p class="text-xl font-bold text-gray-800">Danh hiệu: <span id="student-title-display" class="text-green-600">Đang tải...</span></p>
+            </div>
+
+            <div class="mt-6 mb-8 p-4 bg-white rounded-lg border border-gray-200 max-h-96 overflow-y-auto">
+                <h3 class="text-xl font-semibold mb-3 text-gray-800 text-center">Mức độ Thành thạo Chủ đề</h3>
+                <canvas id="masteryChart"></canvas> </div>
+
+            <div id="topic-progress-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                </div>
+
+            <button id="refresh-progress-btn" class="mt-6 w-full py-3 px-6 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition-colors duration-200">
+                Cập nhật Tiến độ
+            </button>
+        </div>
+
+        <footer class="mt-8 border-t pt-4 text-center">
+             <button id="export-btn" class="bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-75 transition-colors duration-200">Xuất kết quả (CSV)</button>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const API_BASE_URL = 'http://127.0.0.1:8000/api/v1';
+            const loginContainer = document.getElementById('login-container');
+            const appContainer = document.getElementById('app-container');
+            const studentIdInput = document.getElementById('student-id-input');
+            const startBtn = document.getElementById('start-btn');
+            const studentIdDisplay = document.getElementById('student-id-display');
+            const questionTextEl = document.getElementById('question-text');
+            const optionsContainerEl = document.getElementById('options-container');
+            const feedbackTextEl = document.getElementById('feedback-text');
+            const nextQuestionBtn = document.getElementById('next-question-btn');
+            const exportBtn = document.getElementById('export-btn');
+            
+            // Các phần tử mới cho Dashboard Tiến độ
+            const totalStarsDisplay = document.getElementById('total-stars-display');
+            const studentTitleDisplay = document.getElementById('student-title-display');
+            const topicProgressContainer = document.getElementById('topic-progress-container');
+            const refreshProgressBtn = document.getElementById('refresh-progress-btn');
+            const toggleProgressBtn = document.getElementById('toggle-progress-btn'); // Nút chuyển đổi
+            const progressDashboardSection = document.getElementById('progress-dashboard-section'); // Phần dashboard
+            const masteryChartCanvas = document.getElementById('masteryChart'); // Canvas cho biểu đồ
+            let masteryChartInstance = null; // Biến để lưu trữ đối tượng biểu đồ Chart.js
+
+            // CẬP NHẬT: Thêm phần tử để hiển thị tên học sinh trong dashboard tiến độ
+            const studentProgressNameEl = document.getElementById('student-progress-name').querySelector('strong');
+
+
+            let currentQuestion = null;
+            let studentId = null;
+
+            // Bản đồ chi tiết cho tên KC (dùng cả tên ngắn và tên đầy đủ có dấu)
+            const knowledgeComponentMap = {
+                "khai_niem_phan_so": { short: "Khái niệm", full: "Khái niệm phân số" },
+                "rut_gon_phan_so": { short: "Rút gọn", full: "Rút gọn phân số" },
+                "quy_dong_mau_so": { short: "Quy đồng", full: "Quy đồng mẫu số" },
+                "so_sanh_cung_mau": { short: "So sánh cùng MS", full: "So sánh phân số cùng mẫu" },
+                "so_sanh_khac_mau": { short: "So sánh khác MS", full: "So sánh phân số khác mẫu" },
+                "cong_cung_mau_so": { short: "Cộng cùng MS", full: "Cộng phân số cùng mẫu" },
+                "cong_khac_mau_so": { short: "Cộng khác MS", full: "Cộng phân số khác mẫu" },
+                "tru_cung_mau_so": { short: "Trừ cùng MS", full: "Trừ phân số cùng mẫu" },
+                "tru_khac_mau_so": { short: "Trừ khác MS", full: "Trừ phân số khác mẫu" },
+                "phep_nhan_phan_so": { short: "Nhân PS", full: "Phép nhân phân số" },
+                "phep_chia_phan_so": { short: "Chia PS", full: "Phép chia phân số" },
+                "hon_so": { short: "Hỗn số", full: "Hỗn số" },
+                "tim_gia_tri_phan_so_cua_mot_so": { short: "Tìm GT PS của số", full: "Tìm giá trị phân số của một số" },
+                "tim_so_biet_gia_tri_phan_so": { short: "Tìm số biết GT PS", full: "Tìm số biết giá trị phân số của nó" },
+                "bai_toan_thuc_te": { short: "Bài toán thực tế", full: "Bài toán thực tế về phân số" },
+                // Thêm các KC khác vào đây nếu có, với cả tên ngắn gọn và tên đầy đủ có dấu
+            };
+
+
+            // Hàm để render câu hỏi và các lựa chọn
+            function renderQuestion(data) {
+                questionTextEl.textContent = data.content.text;
+                optionsContainerEl.innerHTML = '';
+                (data.options || []).forEach(optionObject => {
+                    const button = document.createElement('button');
+                    // Thêm lớp 'option-btn' để dễ dàng truy cập tất cả các nút
+                    button.className = "option-btn bg-white border-2 border-gray-300 text-gray-700 font-semibold py-4 px-4 rounded-lg hover:bg-gray-100 hover:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75 w-full text-lg transition-all duration-200";
+                    button.textContent = optionObject.text;
+                    button.onclick = () => handleAnswerSelection(button, optionObject.is_correct);
+                    optionsContainerEl.appendChild(button);
+                });
+            }
+
+            // Hàm xử lý khi học sinh chọn câu trả lời
+            async function handleAnswerSelection(selectedButton, isCorrect) {
+                if (!currentQuestion) return;
+                const allButtons = Array.from(optionsContainerEl.children);
+                allButtons.forEach(btn => { btn.disabled = true; btn.classList.add('opacity-50'); });
+
+                const response = await submitAnswer(currentQuestion.question_id, isCorrect);
+                if (!response) return;
+
+                if (isCorrect) {
+                    selectedButton.classList.add('selected-correct');
+                    feedbackTextEl.textContent = 'Chính xác!';
+                    feedbackTextEl.className = 'text-xl font-bold text-green-600';
+                } else {
+                    selectedButton.classList.add('selected-incorrect');
+                    const correctOption = currentQuestion.options.find(opt => opt.is_correct);
+                    if (correctOption) {
+                        allButtons.forEach(btn => {
+                            // Kiểm tra textContent vì optionObject.text đã được dùng để tạo button
+                            if (btn.textContent === correctOption.text) {
+                                btn.classList.add('reveal-correct');
+                            }
+                        });
+                        feedbackTextEl.textContent = `Chưa đúng. Đáp án là: ${correctOption.text}`;
+                        feedbackTextEl.className = 'text-xl font-bold text-red-600';
+                    }
+                }
+                nextQuestionBtn.classList.remove('hidden');
+                
+                // Cập nhật tiến độ sau khi gửi câu trả lời (nếu dashboard đang hiển thị)
+                if (!progressDashboardSection.classList.contains('hidden')) {
+                    await fetchAndRenderProgress();
+                }
+            }
+
+            // Hàm xử lý đăng nhập
+            async function handleLogin() {
+                const inputId = studentIdInput.value.trim().toLowerCase().replace(/\s+/g, '_');
+                if (!inputId) { alert('Vui lòng nhập tên!'); return; }
+                studentId = inputId;
+                studentIdDisplay.textContent = studentId;
+                // CẬP NHẬT: Cập nhật tên học sinh trong phần tiến độ
+                studentProgressNameEl.textContent = studentId.replace(/_/g, ' '); // Hiển thị tên đã được định dạng
+
+                loginContainer.classList.add('hidden');
+                appContainer.classList.remove('hidden');
+                await getNextQuestion();
+            }
+
+            // Hàm lấy câu hỏi tiếp theo từ API
+            async function getNextQuestion() {
+                if (!studentId) return;
+                questionTextEl.textContent = 'Đang tải...';
+                optionsContainerEl.innerHTML = '';
+                feedbackTextEl.textContent = '';
+                nextQuestionBtn.classList.add('hidden');
+                try {
+                    const response = await fetch(`${API_BASE_URL}/session/${studentId}/next-question`);
+                    if (!response.ok) throw new Error('Lỗi mạng hoặc server.');
+                    const data = await response.json();
+                    currentQuestion = data;
+                    renderQuestion(data);
+                } catch (error) {
+                    questionTextEl.textContent = 'Lỗi! Không thể tải câu hỏi. Vui lòng kiểm tra lại backend.';
+                    console.error('Fetch error:', error);
+                }
+            }
+
+            // Hàm gửi câu trả lời lên API
+            async function submitAnswer(questionId, isCorrect) {
+                if (!studentId) return null;
+                try {
+                    const response = await fetch(`${API_BASE_URL}/session/${studentId}/submit-answer`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ question_id: questionId, correct: isCorrect })
+                    });
+                    if (!response.ok) throw new Error('Lỗi server khi nộp bài.');
+                    return await response.json();
+                } catch (error) {
+                    feedbackTextEl.textContent = 'Lỗi! Không thể gửi câu trả lời.';
+                    console.error('Submit error:', error);
+                    return null;
+                }
+            }
+            
+            // Hàm xuất kết quả CSV
+            function exportResults() {
+                if (!studentId) { alert("Vui lòng đăng nhập để xuất kết quả."); return; }
+                window.location.href = `${API_BASE_URL}/students/${studentId}/export`;
+            }
+
+            // --- CÁC HÀM MỚI CHO TIẾN ĐỘ HỌC TẬP VÀ BIỂU ĐỒ ---
+
+            // Hàm để render biểu tượng sao
+            function renderStars(numStars) {
+                let starsHtml = '';
+                for (let i = 0; i < 5; i++) { // Luôn hiển thị 5 vị trí sao
+                    if (i < numStars) {
+                        starsHtml += '<span class="text-yellow-400">&#9733;</span>'; // Sao đầy (Unicode Star)
+                    } else {
+                        starsHtml += '<span class="text-gray-300">&#9733;</span>'; // Sao rỗng
+                    }
+                }
+                return starsHtml;
+            }
+
+            // Hàm để vẽ/cập nhật biểu đồ thành thạo (Radar Chart)
+            function renderMasteryChart(topicProgressData) {
+                // Sắp xếp dữ liệu theo tên chủ đề để biểu đồ luôn nhất quán
+                topicProgressData.sort((a, b) => a.topic.localeCompare(b.topic));
+
+                // Sử dụng TÊN ĐẦY ĐỦ CÓ DẤU từ knowledgeComponentMap cho nhãn biểu đồ
+                const labels = topicProgressData.map(item => (knowledgeComponentMap[item.topic] && knowledgeComponentMap[item.topic].full) || item.topic.replace(/_/g, ' ').toUpperCase());
+                const data = topicProgressData.map(item => {
+                    // Chuyển sao thành phần trăm để biểu đồ dễ hiểu hơn (sao/5 * 100)
+                    return (item.stars / 5) * 100;
+                });
+
+                if (masteryChartInstance) {
+                    // Cập nhật dữ liệu biểu đồ hiện có
+                    masteryChartInstance.data.labels = labels;
+                    masteryChartInstance.data.datasets[0].data = data;
+                    masteryChartInstance.update();
+                } else {
+                    // Tạo biểu đồ mới nếu chưa tồn tại
+                    masteryChartInstance = new Chart(masteryChartCanvas, {
+                        type: 'radar', // Loại biểu đồ là 'radar' (mạng nhện)
+                        data: {
+                            labels: labels,
+                            datasets: [{
+                                label: 'Mức độ thành thạo (%)',
+                                data: data,
+                                backgroundColor: 'rgba(75, 192, 192, 0.4)', // Màu nền nhẹ hơn cho radar
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 2,
+                                fill: true, // Tô màu bên trong mạng nhện
+                                pointBackgroundColor: 'rgba(75, 192, 192, 1)',
+                                pointBorderColor: '#fff',
+                                pointHoverBackgroundColor: '#fff',
+                                pointHoverBorderColor: 'rgba(75, 192, 192, 1)'
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false, // Quan trọng để biểu đồ có thể thay đổi kích thước
+                            plugins: {
+                                legend: {
+                                    display: false, // Thường không cần legend cho radar chart đơn
+                                },
+                                tooltip: {
+                                    callbacks: {
+                                        // Tooltip sẽ hiển thị nhãn (đã là tên đầy đủ) và giá trị
+                                        label: function(context) {
+                                            return `${context.label}: ${context.raw.toFixed(1)}%`;
+                                        }
+                                    }
+                                }
+                            },
+                            scales: {
+                                r: { // Cấu hình trục radial cho radar chart
+                                    beginAtZero: true,
+                                    min: 0,
+                                    max: 100, // Phạm vi từ 0% đến 100%
+                                    pointLabels: {
+                                        font: {
+                                            size: 10 // Giữ kích thước font nhãn nhỏ để phù hợp với tên đầy đủ
+                                        },
+                                        color: '#333' // Đảm bảo màu chữ dễ đọc
+                                    },
+                                    ticks: {
+                                        backdropColor: 'transparent', // Giúp số không bị che bởi lưới
+                                        callback: function(value) {
+                                            return value + '%'; // Hiển thị % trên trục
+                                        },
+                                        stepSize: 25 // Bước nhảy 25% cho trục (0%, 25%, 50%, 75%, 100%)
+                                    },
+                                    grid: {
+                                        color: 'rgba(200, 200, 200, 0.5)' // Màu lưới
+                                    },
+                                    angleLines: {
+                                        color: 'rgba(200, 200, 200, 0.5)' // Màu đường góc
+                                    }
+                                }
+                            }
+                        }
+                    });
+                }
+            }
+
+            // Hàm để lấy và hiển thị tiến độ học tập từ API
+            async function fetchAndRenderProgress() {
+                if (!studentId) {
+                    totalStarsDisplay.textContent = '0';
+                    studentTitleDisplay.textContent = 'Chưa đăng nhập';
+                    topicProgressContainer.innerHTML = '<p class="text-center text-gray-600">Vui lòng đăng nhập để xem tiến độ.</p>';
+                    if (masteryChartInstance) { // Hủy biểu đồ nếu không có học sinh
+                        masteryChartInstance.destroy();
+                        masteryChartInstance = null;
+                    }
+                    return;
+                }
+
+                totalStarsDisplay.textContent = 'Đang tải...';
+                studentTitleDisplay.textContent = 'Đang tải...';
+                topicProgressContainer.innerHTML = '<p class="text-center text-gray-600">Đang tải tiến độ...</p>';
+
+                try {
+                    const response = await fetch(`${API_BASE_URL}/students/${studentId}/progress`);
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    const data = await response.json();
+                    console.log("Dữ liệu Tiến độ Học sinh:", data);
+
+                    totalStarsDisplay.textContent = data.total_stars;
+                    studentTitleDisplay.textContent = data.title;
+                    // CẬP NHẬT: Cập nhật tên học sinh trong phần tiến độ
+                    studentProgressNameEl.textContent = studentId.replace(/_/g, ' ');
+
+                    // Render biểu đồ và sao từng chủ đề
+                    if (data.topic_progress && data.topic_progress.length > 0) {
+                        renderMasteryChart(data.topic_progress); // Gọi hàm render biểu đồ
+                        topicProgressContainer.innerHTML = ''; // Xóa nội dung cũ
+                        data.topic_progress.forEach(item => {
+                            // Sử dụng tên đầy đủ có dấu từ knowledgeComponentMap cho danh sách sao (giữ nguyên)
+                            const topicDisplayName = (knowledgeComponentMap[item.topic] && knowledgeComponentMap[item.topic].full) || item.topic.replace(/_/g, ' ').toUpperCase();
+                            const topicCard = document.createElement('div');
+                            topicCard.className = 'bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200';
+                            topicCard.innerHTML = `
+                                <h3 class="font-medium text-gray-700 mb-2">${topicDisplayName}</h3>
+                                <div class="text-xl">
+                                    ${renderStars(item.stars)}
+                                </div>
+                            `;
+                            topicProgressContainer.appendChild(topicCard);
+                        });
+                    } else {
+                        topicProgressContainer.innerHTML = '<p class="text-center text-gray-600">Chưa có dữ liệu tiến độ cho các chủ đề.</p>';
+                        if (masteryChartInstance) { // Hủy biểu đồ nếu không có dữ liệu
+                            masteryChartInstance.destroy();
+                            masteryChartInstance = null;
+                        }
+                    }
+
+                } catch (error) {
+                    console.error("Lỗi khi tải tiến độ học sinh:", error);
+                    totalStarsDisplay.textContent = 'Lỗi';
+                    studentTitleDisplay.textContent = 'Lỗi';
+                    topicProgressContainer.innerHTML = '<p class="text-center text-red-500">Không thể tải tiến độ. Vui lòng thử lại.</p>';
+                    if (masteryChartInstance) { // Hủy biểu đồ nếu có lỗi tải
+                        masteryChartInstance.destroy();
+                        masteryChartInstance = null;
+                    }
+                }
+            }
+
+            // --- TRÌNH NGHE SỰ KIỆN (EVENT LISTENERS) ---
+            startBtn.addEventListener('click', handleLogin);
+            studentIdInput.addEventListener('keypress', (event) => {
+                if (event.key === 'Enter') handleLogin();
+            });
+            nextQuestionBtn.addEventListener('click', getNextQuestion);
+            exportBtn.addEventListener('click', exportResults);
+            
+            refreshProgressBtn.addEventListener('click', fetchAndRenderProgress);
+
+            toggleProgressBtn.addEventListener('click', () => {
+                progressDashboardSection.classList.toggle('hidden');
+                if (!progressDashboardSection.classList.contains('hidden')) {
+                    fetchAndRenderProgress();
+                    toggleProgressBtn.textContent = 'Ẩn Tiến độ Học tập';
+                } else {
+                    toggleProgressBtn.textContent = 'Xem Tiến độ Học tập';
+                }
+            });
+
+        });
+    </script>
+</body>
+</html>

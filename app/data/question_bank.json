@@ -1,73 +1,1802 @@
 [
   {
-    "question_id": "QN001",
+    "question_id": "khai_niem_phan_so_01",
     "content": {
-      "text": "Tính giá trị của biểu thức: 1/7 + 3/7",
-      "image": null,
-      "formula_latex": "\\frac{1}{7} + \\frac{3}{7}"
+      "text": "Trong một chiếc bánh được chia thành 8 phần bằng nhau, An ăn 3 phần. Phân số chỉ số phần bánh An đã ăn là gì?",
+      "formula_latex": null
     },
     "question_type": "multiple_choice",
-    "options": ["3/14", "4/14", "4/7", "2/7"],
-    "correct_answer": "4/7",
-    "knowledge_component": "cong_cung_mau_so",
-    "difficulty_level": 1,
-    "misconception_target": ["ERROR_ADD_DENOMINATOR"],
-    "hints": [
-      {"hint_id": "H001_1", "text": "Khi cộng hai phân số cùng mẫu, ta làm gì với tử số và mẫu số?"},
-      {"hint_id": "H001_2", "text": "Lưu ý, chúng ta chỉ cộng các tử số và giữ nguyên mẫu số chung."}
-    ]
+    "options": ["3/8", "8/3", "3/5", "5/8"],
+    "correct_answer": "3/8",
+    "knowledge_component": "khai_niem_phan_so",
+    "difficulty_level": 1
   },
   {
-    "question_id": "QN002",
+    "question_id": "khai_niem_phan_so_02",
     "content": {
-      "text": "Rút gọn phân số sau về dạng tối giản: 12/18",
-      "image": null,
-      "formula_latex": "\\frac{12}{18}"
+      "text": "Phân số nào sau đây bằng phân số 1/2?",
+      "formula_latex": "\\frac{1}{2}"
     },
     "question_type": "multiple_choice",
-    "options": ["6/9", "4/6", "2/3", "3/4"],
+    "options": ["2/3", "3/4", "4/8", "5/9"],
+    "correct_answer": "4/8",
+    "knowledge_component": "khai_niem_phan_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "khai_niem_phan_so_03",
+    "content": {
+      "text": "Phân số 5/5 có giá trị bằng bao nhiêu?",
+      "formula_latex": "\\frac{5}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["0", "1", "5", "Không xác định"],
+    "correct_answer": "1",
+    "knowledge_component": "khai_niem_phan_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "khai_niem_phan_so_04",
+    "content": {
+      "text": "Tìm một phân số bằng phân số 2/3 và có mẫu số là 15.",
+      "formula_latex": "\\frac{2}{3}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["5/15", "10/15", "12/15", "9/15"],
+    "correct_answer": "10/15",
+    "knowledge_component": "khai_niem_phan_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "khai_niem_phan_so_05",
+    "content": {
+      "text": "Tử số của phân số 7/12 là số nào?",
+      "formula_latex": "\\frac{7}{12}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["7", "12", "5", "19"],
+    "correct_answer": "7",
+    "knowledge_component": "khai_niem_phan_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "khai_niem_phan_so_06",
+    "content": {
+      "text": "Mẫu số của phân số 9/4 là số nào?",
+      "formula_latex": "\\frac{9}{4}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["9", "4", "5", "13"],
+    "correct_answer": "4",
+    "knowledge_component": "khai_niem_phan_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "khai_niem_phan_so_07",
+    "content": {
+      "text": "Phân số nào sau đây là phân số thập phân?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["3/7", "12/5", "7/100", "5/12"],
+    "correct_answer": "7/100",
+    "knowledge_component": "khai_niem_phan_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "khai_niem_phan_so_08",
+    "content": {
+      "text": "Phân số 0/6 có giá trị bằng bao nhiêu?",
+      "formula_latex": "\\frac{0}{6}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["0", "1", "6", "Không xác định"],
+    "correct_answer": "0",
+    "knowledge_component": "khai_niem_phan_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "khai_niem_phan_so_09",
+    "content": {
+      "text": "Tìm một phân số bằng 3/5 và có tổng của tử và mẫu là 40.",
+      "formula_latex": "\\frac{3}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["12/28", "15/25", "18/22", "20/20"],
+    "correct_answer": "15/25",
+    "knowledge_component": "khai_niem_phan_so",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "khai_niem_phan_so_10",
+    "content": {
+      "text": "Phân số có tử là -4 và mẫu là 9 được viết là:",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["-4/9", "4/-9", "9/-4", "-9/4"],
+    "correct_answer": "-4/9",
+    "knowledge_component": "khai_niem_phan_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "rut_gon_phan_so_01",
+    "content": {
+      "text": "Rút gọn phân số 4/8 về dạng tối giản.",
+      "formula_latex": "\\frac{4}{8}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["2/4", "1/2", "1/4", "4/8"],
+    "correct_answer": "1/2",
+    "knowledge_component": "rut_gon_phan_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "rut_gon_phan_so_02",
+    "content": {
+      "text": "Rút gọn phân số 6/9.",
+      "formula_latex": "\\frac{6}{9}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["3/4", "2/3", "1/3", "6/9"],
     "correct_answer": "2/3",
     "knowledge_component": "rut_gon_phan_so",
-    "difficulty_level": 2,
-    "misconception_target": ["ERROR_SIMPLIFY_PROCEDURE"],
-    "hints": [
-      {"hint_id": "H002_1", "text": "Để rút gọn phân số, hãy tìm ước chung lớn nhất (ƯCLN) của cả tử và mẫu."},
-      {"hint_id": "H002_2", "text": "Chia cả tử số và mẫu số cho ƯCLN của chúng."}
-    ]
+    "difficulty_level": 2
   },
   {
-    "question_id": "QN003",
+    "question_id": "rut_gon_phan_so_03",
     "content": {
-      "text": "Thực hiện phép tính: 2/3 + 1/4",
-      "image": null,
-      "formula_latex": "\\frac{2}{3} + \\frac{1}{4}"
+      "text": "Phân số tối giản của 12/16 là gì?",
+      "formula_latex": "\\frac{12}{16}"
     },
     "question_type": "multiple_choice",
-    "options": ["3/7", "11/12", "8/12", "3/12"],
+    "options": ["6/8", "3/4", "4/5", "1/4"],
+    "correct_answer": "3/4",
+    "knowledge_component": "rut_gon_phan_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "rut_gon_phan_so_04",
+    "content": {
+      "text": "Rút gọn phân số 25/100.",
+      "formula_latex": "\\frac{25}{100}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["5/20", "1/4", "1/5", "2/8"],
+    "correct_answer": "1/4",
+    "knowledge_component": "rut_gon_phan_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "rut_gon_phan_so_05",
+    "content": {
+      "text": "Rút gọn phân số 18/24.",
+      "formula_latex": "\\frac{18}{24}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["9/12", "3/4", "2/3", "6/8"],
+    "correct_answer": "3/4",
+    "knowledge_component": "rut_gon_phan_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "rut_gon_phan_so_06",
+    "content": {
+      "text": "Rút gọn phân số 30/45.",
+      "formula_latex": "\\frac{30}{45}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["6/9", "2/3", "10/15", "3/5"],
+    "correct_answer": "2/3",
+    "knowledge_component": "rut_gon_phan_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "rut_gon_phan_so_07",
+    "content": {
+      "text": "Rút gọn phân số -21/28.",
+      "formula_latex": "-\\frac{21}{28}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["-3/4", "-7/9", "-3/5", "-7/4"],
+    "correct_answer": "-3/4",
+    "knowledge_component": "rut_gon_phan_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "rut_gon_phan_so_08",
+    "content": {
+      "text": "Phân số 13/17 đã tối giản chưa?",
+      "formula_latex": "\\frac{13}{17}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["Rồi", "Chưa"],
+    "correct_answer": "Rồi",
+    "knowledge_component": "rut_gon_phan_so",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "rut_gon_phan_so_09",
+    "content": {
+      "text": "Để rút gọn phân số ta làm gì?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["Chia tử cho mẫu", "Chia cả tử và mẫu cho một số bất kỳ", "Chia cả tử và mẫu cho ước chung của chúng", "Nhân cả tử và mẫu với một số"],
+    "correct_answer": "Chia cả tử và mẫu cho ước chung của chúng",
+    "knowledge_component": "rut_gon_phan_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "rut_gon_phan_so_10",
+    "content": {
+      "text": "Rút gọn phân số 100/150.",
+      "formula_latex": "\\frac{100}{150}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["10/15", "2/3", "50/75", "1/2"],
+    "correct_answer": "2/3",
+    "knowledge_component": "rut_gon_phan_so",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "quy_dong_mau_so_01",
+    "content": {
+      "text": "Quy đồng mẫu số hai phân số 1/2 và 1/3. Mẫu số chung nhỏ nhất là bao nhiêu?",
+      "formula_latex": "\\frac{1}{2} \\text{ và } \\frac{1}{3}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["2", "3", "5", "6"],
+    "correct_answer": "6",
+    "knowledge_component": "quy_dong_mau_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "quy_dong_mau_so_02",
+    "content": {
+      "text": "Sau khi quy đồng, phân số 2/5 trở thành phân số nào để có cùng mẫu số với 3/4?",
+      "formula_latex": "\\frac{2}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["8/20", "10/20", "15/20", "5/20"],
+    "correct_answer": "8/20",
+    "knowledge_component": "quy_dong_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "quy_dong_mau_so_03",
+    "content": {
+      "text": "Mẫu số chung nhỏ nhất của hai phân số 3/8 và 5/6 là gì?",
+      "formula_latex": "\\frac{3}{8} \\text{ và } \\frac{5}{6}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["14", "48", "24", "18"],
+    "correct_answer": "24",
+    "knowledge_component": "quy_dong_mau_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "quy_dong_mau_so_04",
+    "content": {
+      "text": "Quy đồng mẫu số hai phân số 1/4 và 7/12.",
+      "formula_latex": "\\frac{1}{4} \\text{ và } \\frac{7}{12}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["3/12 và 7/12", "12/48 và 28/48", "2/12 và 7/12", "4/12 và 7/12"],
+    "correct_answer": "3/12 và 7/12",
+    "knowledge_component": "quy_dong_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "quy_dong_mau_so_05",
+    "content": {
+      "text": "Mẫu số chung nhỏ nhất của 1/2, 1/3, và 1/5 là bao nhiêu?",
+      "formula_latex": "\\frac{1}{2}, \\frac{1}{3}, \\frac{1}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["10", "15", "30", "60"],
+    "correct_answer": "30",
+    "knowledge_component": "quy_dong_mau_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "quy_dong_mau_so_06",
+    "content": {
+      "text": "Để thực hiện phép tính 4/9 + 2/3, ta cần quy đồng mẫu số. Phân số 2/3 sẽ được viết lại thành?",
+      "formula_latex": "\\frac{2}{3}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["4/6", "6/9", "8/12", "3/9"],
+    "correct_answer": "6/9",
+    "knowledge_component": "quy_dong_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "quy_dong_mau_so_07",
+    "content": {
+      "text": "Mẫu số chung của hai phân số 5/7 và 5/8 là?",
+      "formula_latex": "\\frac{5}{7} \\text{ và } \\frac{5}{8}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["15", "40", "56", "35"],
+    "correct_answer": "56",
+    "knowledge_component": "quy_dong_mau_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "quy_dong_mau_so_08",
+    "content": {
+      "text": "Quy đồng mẫu số 3 phân số 1/3, 3/4, 5/6.",
+      "formula_latex": "\\frac{1}{3}, \\frac{3}{4}, \\frac{5}{6}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["4/12, 9/12, 10/12", "2/6, 3/6, 5/6", "6/24, 18/24, 20/24", "3/12, 9/12, 11/12"],
+    "correct_answer": "4/12, 9/12, 10/12",
+    "knowledge_component": "quy_dong_mau_so",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "quy_dong_mau_so_09",
+    "content": {
+      "text": "Mẫu số chung nhỏ nhất của 7/15 và 4/25 là bao nhiêu?",
+      "formula_latex": "\\frac{7}{15} \\text{ và } \\frac{4}{25}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["50", "150", "75", "375"],
+    "correct_answer": "75",
+    "knowledge_component": "quy_dong_mau_so",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "quy_dong_mau_so_10",
+    "content": {
+      "text": "Chọn câu trả lời đúng. Để quy đồng mẫu số nhiều phân số, ta có thể:",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["Lấy tích của các mẫu số làm mẫu số chung", "Lấy BCNN của các mẫu số làm mẫu số chung", "Cả A và B đều đúng", "Cả A và B đều sai"],
+    "correct_answer": "Cả A và B đều đúng",
+    "knowledge_component": "quy_dong_mau_so",
+    "difficulty_level": 5
+  },
+  {
+    "question_id": "so_sanh_cung_mau_01",
+    "content": {
+      "text": "So sánh hai phân số 2/7 và 5/7.",
+      "formula_latex": "\\frac{2}{7} \\text{ và } \\frac{5}{7}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["2/7 > 5/7", "2/7 < 5/7", "2/7 = 5/7"],
+    "correct_answer": "2/7 < 5/7",
+    "knowledge_component": "so_sanh_cung_mau",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "so_sanh_cung_mau_02",
+    "content": {
+      "text": "Phân số nào lớn hơn: 8/9 hay 5/9?",
+      "formula_latex": "\\frac{8}{9} \\text{ hay } \\frac{5}{9}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["8/9", "5/9", "Bằng nhau"],
+    "correct_answer": "8/9",
+    "knowledge_component": "so_sanh_cung_mau",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "so_sanh_cung_mau_03",
+    "content": {
+      "text": "So sánh hai phân số -3/10 và -7/10.",
+      "formula_latex": "-\\frac{3}{10} \\text{ và } -\\frac{7}{10}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["-3/10 > -7/10", "-3/10 < -7/10", "-3/10 = -7/10"],
+    "correct_answer": "-3/10 > -7/10",
+    "knowledge_component": "so_sanh_cung_mau",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "so_sanh_cung_mau_04",
+    "content": {
+      "text": "Trong các phân số sau, phân số nào là nhỏ nhất: 1/12, 11/12, 5/12, 7/12?",
+      "formula_latex": "\\frac{1}{12}, \\frac{11}{12}, \\frac{5}{12}, \\frac{7}{12}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["1/12", "11/12", "5/12", "7/12"],
+    "correct_answer": "1/12",
+    "knowledge_component": "so_sanh_cung_mau",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "so_sanh_cung_mau_05",
+    "content": {
+      "text": "So sánh 4/5 và 1.",
+      "formula_latex": "\\frac{4}{5} \\text{ và } 1"
+    },
+    "question_type": "multiple_choice",
+    "options": ["4/5 > 1", "4/5 < 1", "4/5 = 1"],
+    "correct_answer": "4/5 < 1",
+    "knowledge_component": "so_sanh_cung_mau",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "so_sanh_cung_mau_06",
+    "content": {
+      "text": "So sánh -1/8 và 1/8.",
+      "formula_latex": "-\\frac{1}{8} \\text{ và } \\frac{1}{8}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["-1/8 > 1/8", "-1/8 < 1/8", "-1/8 = 1/8"],
+    "correct_answer": "-1/8 < 1/8",
+    "knowledge_component": "so_sanh_cung_mau",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "so_sanh_cung_mau_07",
+    "content": {
+      "text": "Trong các phân số sau, phân số nào lớn nhất: -2/15, -8/15, -1/15, -14/15?",
+      "formula_latex": "-\\frac{2}{15}, -\\frac{8}{15}, -\\frac{1}{15}, -\\frac{14}{15}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["-2/15", "-8/15", "-1/15", "-14/15"],
+    "correct_answer": "-1/15",
+    "knowledge_component": "so_sanh_cung_mau",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "so_sanh_cung_mau_08",
+    "content": {
+      "text": "Sắp xếp các phân số sau theo thứ tự giảm dần: 3/7, 6/7, 2/7, 5/7.",
+      "formula_latex": "\\frac{3}{7}, \\frac{6}{7}, \\frac{2}{7}, \\frac{5}{7}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["6/7, 5/7, 3/7, 2/7", "2/7, 3/7, 5/7, 6/7", "6/7, 3/7, 5/7, 2/7", "2/7, 5/7, 3/7, 6/7"],
+    "correct_answer": "6/7, 5/7, 3/7, 2/7",
+    "knowledge_component": "so_sanh_cung_mau",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "so_sanh_cung_mau_09",
+    "content": {
+      "text": "Với hai phân số dương có cùng mẫu số, phân số nào có tử số lớn hơn thì...",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["lớn hơn", "nhỏ hơn", "bằng nhau", "không so sánh được"],
+    "correct_answer": "lớn hơn",
+    "knowledge_component": "so_sanh_cung_mau",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "so_sanh_cung_mau_10",
+    "content": {
+      "text": "Sắp xếp các phân số sau theo thứ tự tăng dần: -4/5, 1/5, -1/5, 0/5.",
+      "formula_latex": "-\\frac{4}{5}, \\frac{1}{5}, -\\frac{1}{5}, \\frac{0}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["1/5, 0/5, -1/5, -4/5", "-1/5, -4/5, 0/5, 1/5", "-4/5, -1/5, 0/5, 1/5", "0/5, 1/5, -1/5, -4/5"],
+    "correct_answer": "-4/5, -1/5, 0/5, 1/5",
+    "knowledge_component": "so_sanh_cung_mau",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "so_sanh_khac_mau_01",
+    "content": {
+      "text": "So sánh hai phân số: 1/2 và 2/3.",
+      "formula_latex": "\\frac{1}{2} \\text{ và } \\frac{2}{3}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["1/2 > 2/3", "1/2 < 2/3", "1/2 = 2/3"],
+    "correct_answer": "1/2 < 2/3",
+    "knowledge_component": "so_sanh_khac_mau",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "so_sanh_khac_mau_02",
+    "content": {
+      "text": "Phân số nào lớn hơn: 3/4 hay 4/5?",
+      "formula_latex": "\\frac{3}{4} \\text{ hay } \\frac{4}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["3/4", "4/5", "Bằng nhau"],
+    "correct_answer": "4/5",
+    "knowledge_component": "so_sanh_khac_mau",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "so_sanh_khac_mau_03",
+    "content": {
+      "text": "So sánh hai phân số: 5/6 và 7/9.",
+      "formula_latex": "\\frac{5}{6} \\text{ và } \\frac{7}{9}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["5/6 > 7/9", "5/6 < 7/9", "5/6 = 7/9"],
+    "correct_answer": "5/6 > 7/9",
+    "knowledge_component": "so_sanh_khac_mau",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "so_sanh_khac_mau_04",
+    "content": {
+      "text": "So sánh hai phân số âm: -1/3 và -2/5.",
+      "formula_latex": "-\\frac{1}{3} \\text{ và } -\\frac{2}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["-1/3 > -2/5", "-1/3 < -2/5", "-1/3 = -2/5"],
+    "correct_answer": "-1/3 > -2/5",
+    "knowledge_component": "so_sanh_khac_mau",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "so_sanh_khac_mau_05",
+    "content": {
+      "text": "Phân số nào nhỏ nhất trong các phân số sau: 1/2, 2/5, 3/10?",
+      "formula_latex": "\\frac{1}{2}, \\frac{2}{5}, \\frac{3}{10}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["1/2", "2/5", "3/10"],
+    "correct_answer": "3/10",
+    "knowledge_component": "so_sanh_khac_mau",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "so_sanh_khac_mau_06",
+    "content": {
+      "text": "An đọc được 2/3 quyển sách, Bình đọc được 3/5 quyển sách. Ai đọc được nhiều hơn?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["An", "Bình", "Hai bạn đọc bằng nhau"],
+    "correct_answer": "An",
+    "knowledge_component": "so_sanh_khac_mau",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "so_sanh_khac_mau_07",
+    "content": {
+      "text": "So sánh 7/4 và 1.",
+      "formula_latex": "\\frac{7}{4} \\text{ và } 1"
+    },
+    "question_type": "multiple_choice",
+    "options": ["7/4 > 1", "7/4 < 1", "7/4 = 1"],
+    "correct_answer": "7/4 > 1",
+    "knowledge_component": "so_sanh_khac_mau",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "so_sanh_khac_mau_08",
+    "content": {
+      "text": "So sánh hai phân số: -5/8 và -3/4.",
+      "formula_latex": "-\\frac{5}{8} \\text{ và } -\\frac{3}{4}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["-5/8 > -3/4", "-5/8 < -3/4", "-5/8 = -3/4"],
+    "correct_answer": "-5/8 > -3/4",
+    "knowledge_component": "so_sanh_khac_mau",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "so_sanh_khac_mau_09",
+    "content": {
+      "text": "Sắp xếp theo thứ tự tăng dần: 1/2, 3/5, 4/7.",
+      "formula_latex": "\\frac{1}{2}, \\frac{3}{5}, \\frac{4}{7}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["1/2, 3/5, 4/7", "1/2, 4/7, 3/5", "4/7, 1/2, 3/5"],
+    "correct_answer": "1/2, 4/7, 3/5",
+    "knowledge_component": "so_sanh_khac_mau",
+    "difficulty_level": 5
+  },
+  {
+    "question_id": "so_sanh_khac_mau_10",
+    "content": {
+      "text": "Chọn phương pháp đúng để so sánh hai phân số khác mẫu:",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["Quy đồng mẫu số rồi so sánh tử số", "Quy đồng tử số rồi so sánh mẫu số", "So sánh với số trung gian (ví dụ: 1)", "Tất cả các phương pháp trên đều có thể sử dụng"],
+    "correct_answer": "Tất cả các phương pháp trên đều có thể sử dụng",
+    "knowledge_component": "so_sanh_khac_mau",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "cong_cung_mau_so_01",
+    "content": {
+      "text": "Tính: 1/5 + 3/5",
+      "formula_latex": "\\frac{1}{5} + \\frac{3}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["4/10", "4/5", "2/5", "3/25"],
+    "correct_answer": "4/5",
+    "knowledge_component": "cong_cung_mau_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "cong_cung_mau_so_02",
+    "content": {
+      "text": "Tính: 2/9 + 4/9",
+      "formula_latex": "\\frac{2}{9} + \\frac{4}{9}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["6/18", "6/9", "2/3", "8/81"],
+    "correct_answer": "2/3",
+    "knowledge_component": "cong_cung_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "cong_cung_mau_so_03",
+    "content": {
+      "text": "Kết quả của 3/11 + 5/11 là:",
+      "formula_latex": "\\frac{3}{11} + \\frac{5}{11}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["8/11", "8/22", "15/121", "2/11"],
+    "correct_answer": "8/11",
+    "knowledge_component": "cong_cung_mau_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "cong_cung_mau_so_04",
+    "content": {
+      "text": "Tính: 1/8 + 3/8",
+      "formula_latex": "\\frac{1}{8} + \\frac{3}{8}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["4/16", "1/2", "4/8", "3/64"],
+    "correct_answer": "1/2",
+    "knowledge_component": "cong_cung_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "cong_cung_mau_so_05",
+    "content": {
+      "text": "Tính: 5/12 + 5/12",
+      "formula_latex": "\\frac{5}{12} + \\frac{5}{12}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["10/24", "10/12", "5/6", "25/144"],
+    "correct_answer": "5/6",
+    "knowledge_component": "cong_cung_mau_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "cong_cung_mau_so_06",
+    "content": {
+      "text": "Tính: -2/7 + 5/7",
+      "formula_latex": "-\\frac{2}{7} + \\frac{5}{7}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["-3/7", "3/7", "7/7", "3/14"],
+    "correct_answer": "3/7",
+    "knowledge_component": "cong_cung_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "cong_cung_mau_so_07",
+    "content": {
+      "text": "Tính: 1/10 + 2/10 + 3/10",
+      "formula_latex": "\\frac{1}{10} + \\frac{2}{10} + \\frac{3}{10}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["6/30", "6/10", "3/5", "6/1000"],
+    "correct_answer": "3/5",
+    "knowledge_component": "cong_cung_mau_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "cong_cung_mau_so_08",
+    "content": {
+      "text": "Kết quả của 7/15 + (-2/15) là:",
+      "formula_latex": "\\frac{7}{15} + \\frac{-2}{15}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["9/15", "5/15", "1/3", "5/0"],
+    "correct_answer": "1/3",
+    "knowledge_component": "cong_cung_mau_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "cong_cung_mau_so_09",
+    "content": {
+      "text": "Tính: 3/4 + 1/4",
+      "formula_latex": "\\frac{3}{4} + \\frac{1}{4}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["1", "4/8", "1/2", "2"],
+    "correct_answer": "1",
+    "knowledge_component": "cong_cung_mau_so",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "cong_cung_mau_so_10",
+    "content": {
+      "text": "Lớp 6A có 1/5 số học sinh thích bóng đá và 2/5 số học sinh thích bơi. Tổng số học sinh thích cả hai môn là bao nhiêu phần của lớp?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["3/10", "3/5", "2/25", "2/5"],
+    "correct_answer": "3/5",
+    "knowledge_component": "cong_cung_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "cong_khac_mau_so_01",
+    "content": {
+      "text": "Tính: 1/2 + 1/4",
+      "formula_latex": "\\frac{1}{2} + \\frac{1}{4}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["2/6", "3/4", "2/4", "1/8"],
+    "correct_answer": "3/4",
+    "knowledge_component": "cong_khac_mau_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "cong_khac_mau_so_02",
+    "content": {
+      "text": "Tính: 2/3 + 1/5",
+      "formula_latex": "\\frac{2}{3} + \\frac{1}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["3/8", "13/15", "10/15", "11/15"],
+    "correct_answer": "13/15",
+    "knowledge_component": "cong_khac_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "cong_khac_mau_so_03",
+    "content": {
+      "text": "Kết quả của 3/8 + 5/12 là:",
+      "formula_latex": "\\frac{3}{8} + \\frac{5}{12}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["8/20", "19/24", "8/96", "11/24"],
+    "correct_answer": "19/24",
+    "knowledge_component": "cong_khac_mau_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "cong_khac_mau_so_04",
+    "content": {
+      "text": "Tính: 1/6 + 3/4",
+      "formula_latex": "\\frac{1}{6} + \\frac{3}{4}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["4/10", "11/12", "10/12", "4/12"],
     "correct_answer": "11/12",
     "knowledge_component": "cong_khac_mau_so",
-    "difficulty_level": 3,
-    "misconception_target": [],
-    "hints": [
-      {"hint_id": "H003_1", "text": "Hai phân số này có cùng mẫu số không? Bạn cần làm gì trước khi cộng chúng?"},
-      {"hint_id": "H003_2", "text": "Bạn cần quy đồng mẫu số. Hãy tìm mẫu số chung nhỏ nhất của 3 và 4."}
-    ]
+    "difficulty_level": 3
   },
   {
-    "question_id": "QN004",
+    "question_id": "cong_khac_mau_so_05",
     "content": {
-      "text": "So sánh hai phân số: -5/8 và -7/8",
-      "image": null,
-      "formula_latex": "-\\frac{5}{8} \\text{ và } -\\frac{7}{8}"
+      "text": "Tính: 5/9 + (-1/3)",
+      "formula_latex": "\\frac{5}{9} + \\frac{-1}{3}"
     },
     "question_type": "multiple_choice",
-    "options": ["-5/8 > -7/8", "-5/8 < -7/8", "-5/8 = -7/8"],
-    "correct_answer": "-5/8 > -7/8",
-    "knowledge_component": "so_sanh_cung_mau",
-    "difficulty_level": 2,
-    "misconception_target": [],
-    "hints": [
-      {"hint_id": "H004_1", "text": "Với hai phân số âm có cùng mẫu số dương, phân số nào có tử số lớn hơn thì lớn hơn."}
-    ]
+    "options": ["4/6", "2/9", "4/9", "8/9"],
+    "correct_answer": "2/9",
+    "knowledge_component": "cong_khac_mau_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "cong_khac_mau_so_06",
+    "content": {
+      "text": "Một mảnh vườn được trồng 1/4 diện tích là rau, 2/5 diện tích là cây ăn quả. Tổng diện tích trồng rau và cây ăn quả là bao nhiêu phần?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["3/9", "13/20", "8/20", "10/20"],
+    "correct_answer": "13/20",
+    "knowledge_component": "cong_khac_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "cong_khac_mau_so_07",
+    "content": {
+      "text": "Kết quả của phép tính 2 + 3/5 là:",
+      "formula_latex": "2 + \\frac{3}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["5/5", "13/5", "10/5", "5/7"],
+    "correct_answer": "13/5",
+    "knowledge_component": "cong_khac_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "cong_khac_mau_so_08",
+    "content": {
+      "text": "Tính: 3/20 + 7/10",
+      "formula_latex": "\\frac{3}{20} + \\frac{7}{10}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["10/30", "17/20", "10/20", "1/2"],
+    "correct_answer": "17/20",
+    "knowledge_component": "cong_khac_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "cong_khac_mau_so_09",
+    "content": {
+      "text": "Tính: 1/12 + 2/3 + 3/4",
+      "formula_latex": "\\frac{1}{12} + \\frac{2}{3} + \\frac{3}{4}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["6/19", "18/12", "3/2", "1"],
+    "correct_answer": "3/2",
+    "knowledge_component": "cong_khac_mau_so",
+    "difficulty_level": 5
+  },
+  {
+    "question_id": "cong_khac_mau_so_10",
+    "content": {
+      "text": "Bước quan trọng nhất cần làm trước khi cộng hai phân số khác mẫu là gì?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["Rút gọn phân số", "Quy đồng mẫu số", "Cộng tử với tử", "Nhân hai mẫu số với nhau"],
+    "correct_answer": "Quy đồng mẫu số",
+    "knowledge_component": "cong_khac_mau_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "tru_cung_mau_so_01",
+    "content": {
+      "text": "Tính: 7/9 - 2/9",
+      "formula_latex": "\\frac{7}{9} - \\frac{2}{9}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["5/0", "5/9", "9/9", "5/18"],
+    "correct_answer": "5/9",
+    "knowledge_component": "tru_cung_mau_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "tru_cung_mau_so_02",
+    "content": {
+      "text": "Tính: 5/8 - 1/8",
+      "formula_latex": "\\frac{5}{8} - \\frac{1}{8}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["4/8", "1/2", "4/0", "6/8"],
+    "correct_answer": "1/2",
+    "knowledge_component": "tru_cung_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "tru_cung_mau_so_03",
+    "content": {
+      "text": "Kết quả của 10/11 - 3/11 là:",
+      "formula_latex": "\\frac{10}{11} - \\frac{3}{11}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["7/11", "7/0", "13/11", "7/22"],
+    "correct_answer": "7/11",
+    "knowledge_component": "tru_cung_mau_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "tru_cung_mau_so_04",
+    "content": {
+      "text": "Tính: 9/10 - 3/10",
+      "formula_latex": "\\frac{9}{10} - \\frac{3}{10}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["6/10", "3/5", "6/0", "12/10"],
+    "correct_answer": "3/5",
+    "knowledge_component": "tru_cung_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "tru_cung_mau_so_05",
+    "content": {
+      "text": "Tính: 3/7 - 5/7",
+      "formula_latex": "\\frac{3}{7} - \\frac{5}{7}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["2/7", "-2/7", "2/0", "8/7"],
+    "correct_answer": "-2/7",
+    "knowledge_component": "tru_cung_mau_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "tru_cung_mau_so_06",
+    "content": {
+      "text": "Một thanh gỗ dài 7/8 mét, người ta cắt đi một đoạn dài 3/8 mét. Đoạn gỗ còn lại dài bao nhiêu mét?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["10/8", "4/8", "1/2", "4/0"],
+    "correct_answer": "1/2",
+    "knowledge_component": "tru_cung_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "tru_cung_mau_so_07",
+    "content": {
+      "text": "Kết quả của phép tính 1 - 2/5 là:",
+      "formula_latex": "1 - \\frac{2}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["-1/5", "3/5", "3/4", "1/5"],
+    "correct_answer": "3/5",
+    "knowledge_component": "tru_cung_mau_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "tru_cung_mau_so_08",
+    "content": {
+      "text": "Tính: -1/6 - 5/6",
+      "formula_latex": "\\frac{-1}{6} - \\frac{5}{6}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["-6/12", "-1", "-4/6", "4/6"],
+    "correct_answer": "-1",
+    "knowledge_component": "tru_cung_mau_so",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "tru_cung_mau_so_09",
+    "content": {
+      "text": "Tìm x, biết x + 4/9 = 7/9",
+      "formula_latex": "x + \\frac{4}{9} = \\frac{7}{9}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["11/9", "3/9", "1/3", "3/0"],
+    "correct_answer": "1/3",
+    "knowledge_component": "tru_cung_mau_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "tru_cung_mau_so_10",
+    "content": {
+      "text": "Quy tắc trừ hai phân số cùng mẫu là gì?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["Trừ tử cho tử, trừ mẫu cho mẫu", "Giữ nguyên tử, trừ mẫu cho mẫu", "Trừ tử cho tử, giữ nguyên mẫu", "Giữ nguyên mẫu, cộng tử với tử"],
+    "correct_answer": "Trừ tử cho tử, giữ nguyên mẫu",
+    "knowledge_component": "tru_cung_mau_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "tru_khac_mau_so_01",
+    "content": {
+      "text": "Tính: 1/2 - 1/3",
+      "formula_latex": "\\frac{1}{2} - \\frac{1}{3}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["1/6", "1/1", "0/-1", "1/5"],
+    "correct_answer": "1/6",
+    "knowledge_component": "tru_khac_mau_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "tru_khac_mau_so_02",
+    "content": {
+      "text": "Tính: 3/4 - 1/2",
+      "formula_latex": "\\frac{3}{4} - \\frac{1}{2}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["2/2", "1", "2/4", "1/4"],
+    "correct_answer": "1/4",
+    "knowledge_component": "tru_khac_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "tru_khac_mau_so_03",
+    "content": {
+      "text": "Kết quả của 5/6 - 2/3 là:",
+      "formula_latex": "\\frac{5}{6} - \\frac{2}{3}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["3/3", "1/6", "3/6", "1/2"],
+    "correct_answer": "1/6",
+    "knowledge_component": "tru_khac_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "tru_khac_mau_so_04",
+    "content": {
+      "text": "Tính: 7/10 - 2/5",
+      "formula_latex": "\\frac{7}{10} - \\frac{2}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["5/5", "1", "3/10", "5/10"],
+    "correct_answer": "3/10",
+    "knowledge_component": "tru_khac_mau_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "tru_khac_mau_so_05",
+    "content": {
+      "text": "Tính: 1/4 - 1/2",
+      "formula_latex": "\\frac{1}{4} - \\frac{1}{2}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["-1/4", "1/4", "0/-2", "1/2"],
+    "correct_answer": "-1/4",
+    "knowledge_component": "tru_khac_mau_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "tru_khac_mau_so_06",
+    "content": {
+      "text": "Bình có một sợi dây dài 3/4 mét. Bình dùng 1/3 mét để buộc đồ. Hỏi sợi dây còn lại dài bao nhiêu mét?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["2/1", "5/12", "2/12", "1/6"],
+    "correct_answer": "5/12",
+    "knowledge_component": "tru_khac_mau_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "tru_khac_mau_so_07",
+    "content": {
+      "text": "Kết quả của phép tính 2 - 5/3 là:",
+      "formula_latex": "2 - \\frac{5}{3}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["-3/3", "-1", "1/3", "6/3"],
+    "correct_answer": "1/3",
+    "knowledge_component": "tru_khac_mau_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "tru_khac_mau_so_08",
+    "content": {
+      "text": "Tính: 5/8 - 3/4",
+      "formula_latex": "\\frac{5}{8} - \\frac{3}{4}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["2/4", "1/2", "2/-4", "-1/8"],
+    "correct_answer": "-1/8",
+    "knowledge_component": "tru_khac_mau_so",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "tru_khac_mau_so_09",
+    "content": {
+      "text": "Tìm x, biết x + 1/3 = 1/2",
+      "formula_latex": "x + \\frac{1}{3} = \\frac{1}{2}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["5/6", "1/6", "2/5", "1/1"],
+    "correct_answer": "1/6",
+    "knowledge_component": "tru_khac_mau_so",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "tru_khac_mau_so_10",
+    "content": {
+      "text": "Tính: 7/12 - 5/8",
+      "formula_latex": "\\frac{7}{12} - \\frac{5}{8}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["2/4", "1/24", "-1/24", "2/20"],
+    "correct_answer": "-1/24",
+    "knowledge_component": "tru_khac_mau_so",
+    "difficulty_level": 5
+  },
+  {
+    "question_id": "phep_nhan_phan_so_01",
+    "content": {
+      "text": "Tính: 1/2 * 3/5",
+      "formula_latex": "\\frac{1}{2} \\times \\frac{3}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["4/7", "3/10", "3/7", "4/10"],
+    "correct_answer": "3/10",
+    "knowledge_component": "phep_nhan_phan_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "phep_nhan_phan_so_02",
+    "content": {
+      "text": "Tính: 2/3 * 4/5",
+      "formula_latex": "\\frac{2}{3} \\times \\frac{4}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["6/8", "8/15", "6/15", "10/12"],
+    "correct_answer": "8/15",
+    "knowledge_component": "phep_nhan_phan_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "phep_nhan_phan_so_03",
+    "content": {
+      "text": "Kết quả của 3/4 * 2/3 là:",
+      "formula_latex": "\\frac{3}{4} \\times \\frac{2}{3}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["6/12", "1/2", "5/7", "9/8"],
+    "correct_answer": "1/2",
+    "knowledge_component": "phep_nhan_phan_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "phep_nhan_phan_so_04",
+    "content": {
+      "text": "Tính: 5/6 * 3/10",
+      "formula_latex": "\\frac{5}{6} \\times \\frac{3}{10}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["15/60", "1/4", "8/16", "1/2"],
+    "correct_answer": "1/4",
+    "knowledge_component": "phep_nhan_phan_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "phep_nhan_phan_so_05",
+    "content": {
+      "text": "Tính: 4 * 2/7",
+      "formula_latex": "4 \\times \\frac{2}{7}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["8/28", "8/7", "6/7", "6/11"],
+    "correct_answer": "8/7",
+    "knowledge_component": "phep_nhan_phan_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "phep_nhan_phan_so_06",
+    "content": {
+      "text": "Một hình chữ nhật có chiều dài 3/4 m và chiều rộng 1/2 m. Diện tích hình chữ nhật đó là bao nhiêu m²?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["4/6 m²", "2/3 m²", "3/8 m²", "1 m²"],
+    "correct_answer": "3/8 m²",
+    "knowledge_component": "phep_nhan_phan_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "phep_nhan_phan_so_07",
+    "content": {
+      "text": "Kết quả của phép tính (-1/2) * 5/8 là:",
+      "formula_latex": "\\frac{-1}{2} \\times \\frac{5}{8}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["-5/16", "4/10", "5/16", "-4/10"],
+    "correct_answer": "-5/16",
+    "knowledge_component": "phep_nhan_phan_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "phep_nhan_phan_so_08",
+    "content": {
+      "text": "Tính: (-2/3) * (-6/7)",
+      "formula_latex": "\\frac{-2}{3} \\times \\frac{-6}{7}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["-12/21", "-4/7", "12/21", "4/7"],
+    "correct_answer": "4/7",
+    "knowledge_component": "phep_nhan_phan_so",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "phep_nhan_phan_so_09",
+    "content": {
+      "text": "Quy tắc nhân hai phân số là gì?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["Nhân tử với tử, nhân mẫu với mẫu", "Nhân chéo", "Quy đồng rồi nhân tử", "Cộng tử, nhân mẫu"],
+    "correct_answer": "Nhân tử với tử, nhân mẫu với mẫu",
+    "knowledge_component": "phep_nhan_phan_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "phep_nhan_phan_so_10",
+    "content": {
+      "text": "Tính: 1/2 * 2/3 * 3/4",
+      "formula_latex": "\\frac{1}{2} \\times \\frac{2}{3} \\times \\frac{3}{4}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["6/24", "1/4", "6/9", "1"],
+    "correct_answer": "1/4",
+    "knowledge_component": "phep_nhan_phan_so",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "phep_chia_phan_so_01",
+    "content": {
+      "text": "Tính: 1/2 : 1/3",
+      "formula_latex": "\\frac{1}{2} \\div \\frac{1}{3}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["1/6", "3/2", "2/3", "1"],
+    "correct_answer": "3/2",
+    "knowledge_component": "phep_chia_phan_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "phep_chia_phan_so_02",
+    "content": {
+      "text": "Tính: 2/5 : 3/4",
+      "formula_latex": "\\frac{2}{5} \\div \\frac{3}{4}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["8/15", "15/8", "6/20", "5/9"],
+    "correct_answer": "8/15",
+    "knowledge_component": "phep_chia_phan_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "phep_chia_phan_so_03",
+    "content": {
+      "text": "Kết quả của 4/9 : 2/3 là:",
+      "formula_latex": "\\frac{4}{9} \\div \\frac{2}{3}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["8/27", "12/18", "2/3", "3/2"],
+    "correct_answer": "2/3",
+    "knowledge_component": "phep_chia_phan_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "phep_chia_phan_so_04",
+    "content": {
+      "text": "Tính: 5 : 1/4",
+      "formula_latex": "5 \\div \\frac{1}{4}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["5/4", "4/5", "20", "1/20"],
+    "correct_answer": "20",
+    "knowledge_component": "phep_chia_phan_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "phep_chia_phan_so_05",
+    "content": {
+      "text": "Tính: 3/7 : 2",
+      "formula_latex": "\\frac{3}{7} \\div 2"
+    },
+    "question_type": "multiple_choice",
+    "options": ["6/7", "3/14", "7/6", "14/3"],
+    "correct_answer": "3/14",
+    "knowledge_component": "phep_chia_phan_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "phep_chia_phan_so_06",
+    "content": {
+      "text": "Một sợi dây dài 9/10 mét được chia thành 3 đoạn bằng nhau. Mỗi đoạn dài bao nhiêu mét?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["27/10", "3/10", "10/27", "1/3"],
+    "correct_answer": "3/10",
+    "knowledge_component": "phep_chia_phan_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "phep_chia_phan_so_07",
+    "content": {
+      "text": "Kết quả của phép tính (-3/4) : (1/2) là:",
+      "formula_latex": "\\frac{-3}{4} \\div \\frac{1}{2}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["-3/8", "-6/4", "-3/2", "3/2"],
+    "correct_answer": "-3/2",
+    "knowledge_component": "phep_chia_phan_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "phep_chia_phan_so_08",
+    "content": {
+      "text": "Tính: (-2/5) : (-4/5)",
+      "formula_latex": "\\frac{-2}{5} \\div \\frac{-4}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["8/25", "2", "1/2", "-1/2"],
+    "correct_answer": "1/2",
+    "knowledge_component": "phep_chia_phan_so",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "phep_chia_phan_so_09",
+    "content": {
+      "text": "Quy tắc chia hai phân số là gì?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["Chia tử cho tử, chia mẫu cho mẫu", "Nhân phân số thứ nhất với phân số thứ hai", "Nhân phân số thứ nhất với nghịch đảo của phân số thứ hai", "Nghịch đảo phân số thứ nhất rồi nhân với phân số thứ hai"],
+    "correct_answer": "Nhân phân số thứ nhất với nghịch đảo của phân số thứ hai",
+    "knowledge_component": "phep_chia_phan_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "phep_chia_phan_so_10",
+    "content": {
+      "text": "Tìm x biết x * 3/5 = 6/7",
+      "formula_latex": "x \\times \\frac{3}{5} = \\frac{6}{7}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["18/35", "30/21", "10/7", "7/10"],
+    "correct_answer": "10/7",
+    "knowledge_component": "phep_chia_phan_so",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "hon_so_01",
+    "content": {
+      "text": "Chuyển hỗn số 2 1/3 thành phân số.",
+      "formula_latex": "2\\frac{1}{3}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["2/3", "6/3", "7/3", "3/2"],
+    "correct_answer": "7/3",
+    "knowledge_component": "hon_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "hon_so_02",
+    "content": {
+      "text": "Chuyển phân số 7/2 thành hỗn số.",
+      "formula_latex": "\\frac{7}{2}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["2 1/2", "3 1/2", "1 5/2", "7 1/2"],
+    "correct_answer": "3 1/2",
+    "knowledge_component": "hon_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "hon_so_03",
+    "content": {
+      "text": "Tính: 1 1/4 + 2 1/4",
+      "formula_latex": "1\\frac{1}{4} + 2\\frac{1}{4}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["3 2/8", "3 2/4", "3 1/2", "3 1/4"],
+    "correct_answer": "3 1/2",
+    "knowledge_component": "hon_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "hon_so_04",
+    "content": {
+      "text": "Hỗn số 5 2/7 được đọc là:",
+      "formula_latex": "5\\frac{2}{7}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["Năm và hai phần bảy", "Năm hai phần bảy", "Năm phẩy hai phần bảy", "Hai phần bảy và năm"],
+    "correct_answer": "Năm hai phần bảy",
+    "knowledge_component": "hon_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "hon_so_05",
+    "content": {
+      "text": "Chuyển phân số 15/4 thành hỗn số.",
+      "formula_latex": "\\frac{15}{4}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["4 1/4", "3 3/4", "3 1/4", "4 3/4"],
+    "correct_answer": "3 3/4",
+    "knowledge_component": "hon_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "hon_so_06",
+    "content": {
+      "text": "Tính: 3 1/2 - 1 1/4",
+      "formula_latex": "3\\frac{1}{2} - 1\\frac{1}{4}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["2 1/4", "2 0/2", "2", "9/4"],
+    "correct_answer": "2 1/4",
+    "knowledge_component": "hon_so",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "hon_so_07",
+    "content": {
+      "text": "Phân số nào sau đây có thể viết dưới dạng hỗn số?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["8/9", "3/3", "12/5", "6/12"],
+    "correct_answer": "12/5",
+    "knowledge_component": "hon_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "hon_so_08",
+    "content": {
+      "text": "Chuyển -4 2/3 thành phân số.",
+      "formula_latex": "-4\\frac{2}{3}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["-10/3", "-14/3", "14/3", "10/3"],
+    "correct_answer": "-14/3",
+    "knowledge_component": "hon_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "hon_so_09",
+    "content": {
+      "text": "So sánh: 4 1/5 và 21/5",
+      "formula_latex": "4\\frac{1}{5} \\text{ và } \\frac{21}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": [">", "<", "="],
+    "correct_answer": "=",
+    "knowledge_component": "hon_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "hon_so_10",
+    "content": {
+      "text": "Tính: 2 1/2 * 3/5",
+      "formula_latex": "2\\frac{1}{2} \\times \\frac{3}{5}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["6 3/10", "3/2", "15/10", "1 1/2"],
+    "correct_answer": "3/2",
+    "knowledge_component": "hon_so",
+    "difficulty_level": 5
+  },
+  {
+    "question_id": "tim_gia_tri_phan_so_cua_mot_so_01",
+    "content": {
+      "text": "Tìm 1/2 của 20.",
+      "formula_latex": "\\frac{1}{2} \\text{ của } 20"
+    },
+    "question_type": "multiple_choice",
+    "options": ["10", "40", "22", "20.5"],
+    "correct_answer": "10",
+    "knowledge_component": "tim_gia_tri_phan_so_cua_mot_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "tim_gia_tri_phan_so_cua_mot_so_02",
+    "content": {
+      "text": "Tìm 2/3 của 18.",
+      "formula_latex": "\\frac{2}{3} \\text{ của } 18"
+    },
+    "question_type": "multiple_choice",
+    "options": ["6", "12", "27", "36"],
+    "correct_answer": "12",
+    "knowledge_component": "tim_gia_tri_phan_so_cua_mot_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "tim_gia_tri_phan_so_cua_mot_so_03",
+    "content": {
+      "text": "Một lớp học có 45 học sinh, trong đó 2/5 là học sinh nữ. Hỏi lớp có bao nhiêu học sinh nữ?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["18", "20", "25", "15"],
+    "correct_answer": "18",
+    "knowledge_component": "tim_gia_tri_phan_so_cua_mot_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "tim_gia_tri_phan_so_cua_mot_so_04",
+    "content": {
+      "text": "3/4 của 100 là bao nhiêu?",
+      "formula_latex": "\\frac{3}{4} \\text{ của } 100"
+    },
+    "question_type": "multiple_choice",
+    "options": ["25", "50", "75", "125"],
+    "correct_answer": "75",
+    "knowledge_component": "tim_gia_tri_phan_so_cua_mot_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "tim_gia_tri_phan_so_cua_mot_so_05",
+    "content": {
+      "text": "Tìm 5/6 của 42.",
+      "formula_latex": "\\frac{5}{6} \\text{ của } 42"
+    },
+    "question_type": "multiple_choice",
+    "options": ["30", "35", "7", "40"],
+    "correct_answer": "35",
+    "knowledge_component": "tim_gia_tri_phan_so_cua_mot_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "tim_gia_tri_phan_so_cua_mot_so_06",
+    "content": {
+      "text": "Một giỏ có 60 quả táo. 1/3 số táo có màu đỏ. Hỏi có bao nhiêu quả táo không phải màu đỏ?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["20", "30", "40", "50"],
+    "correct_answer": "40",
+    "knowledge_component": "tim_gia_tri_phan_so_cua_mot_so",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "tim_gia_tri_phan_so_cua_mot_so_07",
+    "content": {
+      "text": "Tìm 4/7 của -28.",
+      "formula_latex": "\\frac{4}{7} \\text{ của } -28"
+    },
+    "question_type": "multiple_choice",
+    "options": ["16", "-16", "28", "-28"],
+    "correct_answer": "-16",
+    "knowledge_component": "tim_gia_tri_phan_so_cua_mot_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "tim_gia_tri_phan_so_cua_mot_so_08",
+    "content": {
+      "text": "Để tìm giá trị phân số của một số, ta làm gì?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["Lấy số đó chia cho phân số", "Lấy phân số chia cho số đó", "Lấy số đó nhân với phân số", "Lấy số đó nhân với mẫu số rồi chia cho tử số"],
+    "correct_answer": "Lấy số đó nhân với phân số",
+    "knowledge_component": "tim_gia_tri_phan_so_cua_mot_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "tim_gia_tri_phan_so_cua_mot_so_09",
+    "content": {
+      "text": "Một chiếc bánh pizza giá 120,000 đồng. Bạn được giảm giá 1/4 giá trị bánh. Bạn được giảm bao nhiêu tiền?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["20,000", "30,000", "40,000", "90,000"],
+    "correct_answer": "30,000",
+    "knowledge_component": "tim_gia_tri_phan_so_cua_mot_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "tim_gia_tri_phan_so_cua_mot_so_10",
+    "content": {
+      "text": "Tìm 3/8 của 2/3.",
+      "formula_latex": "\\frac{3}{8} \\text{ của } \\frac{2}{3}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["6/24", "1/4", "5/11", "9/16"],
+    "correct_answer": "1/4",
+    "knowledge_component": "tim_gia_tri_phan_so_cua_mot_so",
+    "difficulty_level": 5
+  },
+  {
+    "question_id": "tim_so_biet_gia_tri_phan_so_01",
+    "content": {
+      "text": "Tìm một số, biết 1/2 của số đó là 15.",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["7.5", "15", "30", "17"],
+    "correct_answer": "30",
+    "knowledge_component": "tim_so_biet_gia_tri_phan_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "tim_so_biet_gia_tri_phan_so_02",
+    "content": {
+      "text": "Tìm một số, biết 2/3 của số đó bằng 12.",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["8", "18", "24", "36"],
+    "correct_answer": "18",
+    "knowledge_component": "tim_so_biet_gia_tri_phan_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "tim_so_biet_gia_tri_phan_so_03",
+    "content": {
+      "text": "10 là 5/6 của số nào?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["12", "15", "50/6", "8.33"],
+    "correct_answer": "12",
+    "knowledge_component": "tim_so_biet_gia_tri_phan_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "tim_so_biet_gia_tri_phan_so_04",
+    "content": {
+      "text": "3/4 của một số là 21. Số đó là bao nhiêu?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["28", "15.75", "24", "25"],
+    "correct_answer": "28",
+    "knowledge_component": "tim_so_biet_gia_tri_phan_so",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "tim_so_biet_gia_tri_phan_so_05",
+    "content": {
+      "text": "Tìm một số biết 1/5 của nó bằng -10.",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["-2", "-50", "50", "2"],
+    "correct_answer": "-50",
+    "knowledge_component": "tim_so_biet_gia_tri_phan_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "tim_so_biet_gia_tri_phan_so_06",
+    "content": {
+      "text": "Bạn đã đọc 90 trang, tương đương 3/5 quyển sách. Hỏi quyển sách có bao nhiêu trang?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["120", "150", "180", "54"],
+    "correct_answer": "150",
+    "knowledge_component": "tim_so_biet_gia_tri_phan_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "tim_so_biet_gia_tri_phan_so_07",
+    "content": {
+      "text": "Để tìm một số khi biết giá trị phân số của nó, ta làm gì?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["Lấy giá trị đó nhân với phân số", "Lấy giá trị đó chia cho phân số", "Lấy phân số chia cho giá trị đó", "Lấy giá trị đó cộng với phân số"],
+    "correct_answer": "Lấy giá trị đó chia cho phân số",
+    "knowledge_component": "tim_so_biet_gia_tri_phan_so",
+    "difficulty_level": 1
+  },
+  {
+    "question_id": "tim_so_biet_gia_tri_phan_so_08",
+    "content": {
+      "text": "Tìm một số biết 2 1/4 của số đó bằng 36.",
+      "formula_latex": "2\\frac{1}{4}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["16", "81", "18", "72"],
+    "correct_answer": "16",
+    "knowledge_component": "tim_so_biet_gia_tri_phan_so",
+    "difficulty_level": 5
+  },
+  {
+    "question_id": "tim_so_biet_gia_tri_phan_so_09",
+    "content": {
+      "text": "25% của một số là 20. Tìm số đó. (Gợi ý: 25% = 1/4)",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["5", "80", "100", "50"],
+    "correct_answer": "80",
+    "knowledge_component": "tim_so_biet_gia_tri_phan_so",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "tim_so_biet_gia_tri_phan_so_10",
+    "content": {
+      "text": "Số học sinh nữ của lớp 6B là 24 bạn, chiếm 4/7 số học sinh cả lớp. Hỏi lớp 6B có bao nhiêu học sinh?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["35", "42", "28", "49"],
+    "correct_answer": "42",
+    "knowledge_component": "tim_so_biet_gia_tri_phan_so",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "bai_toan_thuc_te_01",
+    "content": {
+      "text": "Một lớp học có 40 học sinh. Kết thúc năm học, 3/5 số học sinh đạt loại Giỏi. Hỏi có bao nhiêu học sinh không đạt loại Giỏi?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["24", "16", "30", "10"],
+    "correct_answer": "16",
+    "knowledge_component": "bai_toan_thuc_te",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "bai_toan_thuc_te_02",
+    "content": {
+      "text": "An đọc một quyển sách dày 120 trang. Ngày đầu An đọc được 1/4 số trang. Hỏi An còn phải đọc bao nhiêu trang nữa?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["30", "60", "90", "80"],
+    "correct_answer": "90",
+    "knowledge_component": "bai_toan_thuc_te",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "bai_toan_thuc_te_03",
+    "content": {
+      "text": "Một mảnh vườn hình chữ nhật có chiều dài 15/2 mét và chiều rộng 10/3 mét. Tính diện tích mảnh vườn.",
+      "formula_latex": "S = a \\times b"
+    },
+    "question_type": "multiple_choice",
+    "options": ["25 m²", "50 m²", "150/6 m²", "75 m²"],
+    "correct_answer": "25 m²",
+    "knowledge_component": "bai_toan_thuc_te",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "bai_toan_thuc_te_04",
+    "content": {
+      "text": "Một ô tô đi hết quãng đường AB trong 2 giờ. Giờ đầu tiên đi được 3/5 quãng đường. Hỏi giờ thứ hai ô tô đi được mấy phần quãng đường?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["1/5", "2/5", "3/5", "4/5"],
+    "correct_answer": "2/5",
+    "knowledge_component": "bai_toan_thuc_te",
+    "difficulty_level": 2
+  },
+  {
+    "question_id": "bai_toan_thuc_te_05",
+    "content": {
+      "text": "Số học sinh nam của một trường là 400 em và chiếm 4/9 tổng số học sinh toàn trường. Hỏi trường có tất cả bao nhiêu học sinh?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["500", "900", "800", "1000"],
+    "correct_answer": "900",
+    "knowledge_component": "bai_toan_thuc_te",
+    "difficulty_level": 3
+  },
+  {
+    "question_id": "bai_toan_thuc_te_06",
+    "content": {
+      "text": "Một cửa hàng có 2 tạ gạo. Ngày đầu bán được 3/10 số gạo. Ngày thứ hai bán được 3/7 số gạo còn lại. Hỏi sau hai ngày, cửa hàng còn lại bao nhiêu kg gạo? (1 tạ = 100kg)",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["60 kg", "80 kg", "140 kg", "100 kg"],
+    "correct_answer": "80 kg",
+    "knowledge_component": "bai_toan_thuc_te",
+    "difficulty_level": 5
+  },
+  {
+    "question_id": "bai_toan_thuc_te_07",
+    "content": {
+      "text": "Mẹ cho An một số tiền. An dùng 1/3 số tiền để mua sách, 1/4 số tiền để mua vở. Sau khi mua, An còn lại 50,000 đồng. Hỏi lúc đầu mẹ cho An bao nhiêu tiền?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["100,000", "120,000", "150,000", "80,000"],
+    "correct_answer": "120,000",
+    "knowledge_component": "bai_toan_thuc_te",
+    "difficulty_level": 5
+  },
+  {
+    "question_id": "bai_toan_thuc_te_08",
+    "content": {
+      "text": "Một người thợ may một cái áo hết 3/2 giờ và may một cái quần hết 7/4 giờ. Hỏi may một bộ quần áo như vậy hết bao nhiêu thời gian?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["10/6 giờ", "13/4 giờ", "3 giờ", "5/4 giờ"],
+    "correct_answer": "13/4 giờ",
+    "knowledge_component": "bai_toan_thuc_te",
+    "difficulty_level": 4
+  },
+  {
+    "question_id": "bai_toan_thuc_te_09",
+    "content": {
+      "text": "Ba người cùng làm một công việc. Người thứ nhất làm một mình thì 3 giờ sẽ xong. Người thứ hai làm một mình thì 4 giờ sẽ xong. Người thứ ba làm một mình thì 6 giờ sẽ xong. Hỏi cả ba người cùng làm thì bao lâu sẽ xong?",
+      "formula_latex": null
+    },
+    "question_type": "multiple_choice",
+    "options": ["4/3 giờ", "1.5 giờ", "3/2 giờ", "Cả A, B, C đều đúng"],
+    "correct_answer": "Cả A, B, C đều đúng",
+    "knowledge_component": "bai_toan_thuc_te",
+    "difficulty_level": 5
+  },
+  {
+    "question_id": "bai_toan_thuc_te_10",
+    "content": {
+      "text": "Một xe máy đi từ A đến B với vận tốc 40 km/h. Sau đó đi từ B về A với vận tốc 60 km/h. Vận tốc trung bình trên cả quãng đường đi và về là bao nhiêu km/h?",
+      "formula_latex": "v_{tb} = \\frac{2*v_1*v_2}{v_1+v_2}"
+    },
+    "question_type": "multiple_choice",
+    "options": ["50 km/h", "48 km/h", "52 km/h", "Không tính được"],
+    "correct_answer": "48 km/h",
+    "knowledge_component": "bai_toan_thuc_te",
+    "difficulty_level": 4
   }
 ]
